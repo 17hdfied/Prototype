@@ -11,13 +11,26 @@ import FBSDKLoginKit
 import Firebase
 class ViewController: UIViewController {
 
-    @IBOutlet weak var email_txt: UITextField!
-    @IBOutlet weak var pass_txt: UITextField!
+    @IBOutlet weak var email_txt: UITextField! //Email Text Field in ViewController
+    @IBOutlet weak var pass_txt: UITextField!  //Password Text Field in ViewController
+    @IBOutlet weak var sign_up: UILabel!       //SignUP Label in ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
+        
+        // Gesture functions are used for the "Sign Up" Label
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.someAction))
+        sign_up.isUserInteractionEnabled = true
+        sign_up.addGestureRecognizer(tap)
     }
-
+    
+    // Perform Gesture to move the viewController to SignUpVCViewController
+   @objc func someAction(sender:UITapGestureRecognizer)
+    {
+        performSegue(withIdentifier: "SignUp", sender: self)
+    }
+    
+    // Perform Sign In through Email and Password and store in Firebase
     @IBAction func login_btn(_ sender: Any) {
         if let email = email_txt.text, let pass = pass_txt.text {
             Auth.auth().signIn(withEmail: email, password: pass, completion: { (user, error) in
@@ -38,6 +51,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // Perform Sign In through Facebook and then store the users in Firebase
     @IBAction func fb_btn(_ sender: Any) {
         let fblogin = FBSDKLoginManager()
         fblogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in

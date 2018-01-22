@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560700B02015D16600662C50 /* SignUpVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560700AF2015D16600662C50 /* SignUpVCViewController.swift */; };
 		56DB9FA1201350D500A5B99B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB9FA0201350D500A5B99B /* AppDelegate.swift */; };
 		56DB9FA3201350D500A5B99B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB9FA2201350D500A5B99B /* ViewController.swift */; };
 		56DB9FA6201350D500A5B99B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DB9FA4201350D500A5B99B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		560700AF2015D16600662C50 /* SignUpVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVCViewController.swift; sourceTree = "<group>"; };
 		56DB9F9D201350D500A5B99B /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DB9FA0201350D500A5B99B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56DB9FA2201350D500A5B99B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				56DB9FA0201350D500A5B99B /* AppDelegate.swift */,
 				56DB9FA2201350D500A5B99B /* ViewController.swift */,
+				560700AF2015D16600662C50 /* SignUpVCViewController.swift */,
 				56DB9FA4201350D500A5B99B /* Main.storyboard */,
 				56DB9FA7201350D500A5B99B /* Assets.xcassets */,
 				56DB9FA9201350D500A5B99B /* LaunchScreen.storyboard */,
@@ -235,6 +238,7 @@
 			files = (
 				56DB9FA3201350D500A5B99B /* ViewController.swift in Sources */,
 				56DB9FA1201350D500A5B99B /* AppDelegate.swift in Sources */,
+				560700B02015D16600662C50 /* SignUpVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
