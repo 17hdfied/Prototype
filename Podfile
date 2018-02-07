@@ -12,4 +12,5 @@ target 'Prototype' do
   pod 'FBSDKCoreKit'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'SwiftKeychainWrapper'
 end

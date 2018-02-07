@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		560700B02015D16600662C50 /* SignUpVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560700AF2015D16600662C50 /* SignUpVCViewController.swift */; };
+		567967D520286BE300FCC164 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567967D420286BE300FCC164 /* Constants.swift */; };
+		567967D82028759D00FCC164 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567967D72028759D00FCC164 /* FeedVC.swift */; };
+		56B1459B202848FB0065E84D /* ForgotPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1459A202848FB0065E84D /* ForgotPass.swift */; };
 		56DB9FA1201350D500A5B99B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB9FA0201350D500A5B99B /* AppDelegate.swift */; };
 		56DB9FA3201350D500A5B99B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB9FA2201350D500A5B99B /* ViewController.swift */; };
 		56DB9FA6201350D500A5B99B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DB9FA4201350D500A5B99B /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		560700AF2015D16600662C50 /* SignUpVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVCViewController.swift; sourceTree = "<group>"; };
+		567967D420286BE300FCC164 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		567967D72028759D00FCC164 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		56B1459A202848FB0065E84D /* ForgotPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPass.swift; sourceTree = "<group>"; };
 		56DB9F9D201350D500A5B99B /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DB9FA0201350D500A5B99B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56DB9FA2201350D500A5B99B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +50,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		567967D62028756500FCC164 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				56DB9FA2201350D500A5B99B /* ViewController.swift */,
+				567967D72028759D00FCC164 /* FeedVC.swift */,
+				560700AF2015D16600662C50 /* SignUpVCViewController.swift */,
+				56B1459A202848FB0065E84D /* ForgotPass.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		56DB9F94201350D500A5B99B = {
 			isa = PBXGroup;
 			children = (
@@ -65,14 +82,14 @@
 		56DB9F9F201350D500A5B99B /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				567967D62028756500FCC164 /* Controller */,
 				56DB9FA0201350D500A5B99B /* AppDelegate.swift */,
-				56DB9FA2201350D500A5B99B /* ViewController.swift */,
-				560700AF2015D16600662C50 /* SignUpVCViewController.swift */,
+				567967D420286BE300FCC164 /* Constants.swift */,
 				56DB9FA4201350D500A5B99B /* Main.storyboard */,
-				56DB9FA7201350D500A5B99B /* Assets.xcassets */,
 				56DB9FA9201350D500A5B99B /* LaunchScreen.storyboard */,
 				56DB9FAC201350D500A5B99B /* Info.plist */,
 				56DC1AC32013BAE600841EC9 /* GoogleService-Info.plist */,
+				56DB9FA7201350D500A5B99B /* Assets.xcassets */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -211,6 +228,7 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -221,6 +239,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -236,9 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				567967D82028759D00FCC164 /* FeedVC.swift in Sources */,
+				567967D520286BE300FCC164 /* Constants.swift in Sources */,
 				56DB9FA3201350D500A5B99B /* ViewController.swift in Sources */,
 				56DB9FA1201350D500A5B99B /* AppDelegate.swift in Sources */,
 				560700B02015D16600662C50 /* SignUpVCViewController.swift in Sources */,
+				56B1459B202848FB0065E84D /* ForgotPass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P56G6X7SJ4;
 				INFOPLIST_FILE = Prototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hardikwason.Prototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +418,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P56G6X7SJ4;
 				INFOPLIST_FILE = Prototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hardikwason.Prototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
